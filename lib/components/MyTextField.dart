@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyTextField extends StatelessWidget {
   
   final controller;
-  final String hintText;   // hintText means to display a name on username field 
+  final String hintText;   // "hintText means to display a name on username field 
   final bool obscureText;  // "obscureText" used to the text field hide, true = hide, false= visible.
 
   

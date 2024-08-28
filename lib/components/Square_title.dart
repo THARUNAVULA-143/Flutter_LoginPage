@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 
-class SquateTitles extends StatelessWidget {
+class SquareTitles extends StatelessWidget {
   final String imagepath;
 
-  const SquateTitles({super.key, required this.imagepath});
+  const SquareTitles({super.key, required this.imagepath});
 
 
   @override

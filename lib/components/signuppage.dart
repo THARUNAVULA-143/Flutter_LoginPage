@@ -61,7 +61,7 @@ class Signuppage extends StatelessWidget {
                 ),
                 const SizedBox(height: 25),
                 MyButton(
-                  onTap: registerUser,
+                  onTap: registerUser, text: ' Register',
                 ),
                 const SizedBox(height: 25),
                 Row(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_loginpage/components/MyTextField.dart';
 import 'package:flutter_loginpage/components/MyButton.dart';
 import 'package:flutter_loginpage/components/Square_title.dart'; // Ensure the correct path
-
+import 'package:flutter_loginpage/components/ForgotPassword.dart'; // Import the ForgotPassword 
 import 'package:flutter_loginpage/components/signuppage.dart'; // Import the SignUpPage
 
 class LoginPage extends StatelessWidget {
@@ -59,19 +59,31 @@ class LoginPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      'Forgot Password',
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: const Color.fromARGB(255, 86, 22, 17),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ForgotPassword()),
+                        );
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'Forgot Password?',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 86, 22, 17),
+                          ),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 20),
               MyButton(
                 onTap: signUserIn,
+                text: 'Sign In',
               ),
               const SizedBox(height: 25),
               Padding(
